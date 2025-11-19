@@ -175,11 +175,14 @@ class Doctor:
         else:
             self.issues.append(
                 "credentials.json not found.\n"
+                "    Quick: python3 setup_credentials.py (if credentials.json is in Downloads)\n"
+                "    Or manual:\n"
                 "    1. Go to https://console.cloud.google.com\n"
                 "    2. Create OAuth 2.0 credentials (Desktop app)\n"
                 "    3. Download and place as credentials.json in project root"
             )
             print("  ✗ credentials.json not found")
+            print("    Quick fix: python3 setup_credentials.py")
         
         if token_path.exists():
             self.success.append("token.json found (authenticated) ✓")
