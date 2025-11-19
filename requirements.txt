@@ -1,0 +1,9 @@
+mcp
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+watchdog
+pyinstaller
+Pillow
+requests
+# Note: ffmpeg must be installed on system (brew install ffmpeg on macOS)
